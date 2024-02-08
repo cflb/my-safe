@@ -22,4 +22,5 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
+        pwd
         pylint --ignored-classes=Tags --load-plugins=pylint_django --django-settings-module=mysafe.settings $(git ls-files '*.py') --load-plugins pylint_django.checkers.migrations
