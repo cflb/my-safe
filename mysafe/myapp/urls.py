@@ -1,4 +1,7 @@
-# myapp/urls.py
+"""
+   URLs to myapp
+"""
+
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from .views import AmbienteViewSet, AplicacaoViewSet, SegredoViewSet
